@@ -18,7 +18,7 @@ class ClustererHistogramMixin : public virtual interfaces::Clusterer {
 
 public:
 
-    std::vector<uint32_t> getHistogram() const override;
+    const std::vector<uint32_t>& getHistogram() const override;
 
     void reset() override;
 

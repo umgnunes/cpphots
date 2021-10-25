@@ -8,7 +8,7 @@
 
 namespace cpphots {
 
-std::vector<uint32_t> ClustererHistogramMixin::getHistogram() const {
+const std::vector<uint32_t>& ClustererHistogramMixin::getHistogram() const {
     return hist;
 }
 

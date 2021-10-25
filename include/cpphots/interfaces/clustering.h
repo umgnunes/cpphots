@@ -114,7 +114,7 @@ public:
      * 
      * @return the histogram of activations
      */
-    virtual std::vector<uint32_t> getHistogram() const = 0;
+    virtual const std::vector<uint32_t>& getHistogram() const = 0;
 
     /**
      * @brief Reset the histogram of activations

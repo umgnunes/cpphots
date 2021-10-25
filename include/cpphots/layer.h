@@ -373,7 +373,7 @@ public:
         return clusterer->train(tss);
     }
 
-    std::vector<uint32_t> getHistogram() const override {
+    const std::vector<uint32_t>& getHistogram() const override {
         cpphots_assert(clusterer != nullptr);
         return clusterer->getHistogram();
     }
